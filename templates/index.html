@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI App</title>
+    <!-- FastAPI Jinja2 syntax to load the static CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>If you this HTM on your computer, refresh the page and it updates instantly without rebuilding!</p>
+</body>
+</html>
+
