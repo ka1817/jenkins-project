@@ -9,7 +9,6 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
 async def read_root(request: Request):
-    # FIX: Explicitly pass request, name, and context arguments
     return templates.TemplateResponse(
         request=request,
         name="index.html", 
